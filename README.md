@@ -1,16 +1,14 @@
-### Hi there 👋
+# Where URLs Become Weapons: Automated Discovery of SSRF Vulnerabilities in Web Applications
 
-<!--
-**SSRFuzz/SSRFuzz** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+This repository will contain the code for a prototype of SSRFuzz. We are currently cleaning up our academic prototype to publish here soon.
 
-Here are some ideas to get you started:
+## Cite
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+```
+@inproceedings{sp2024ssrfuzz,
+  title={{Where URLs Become Weapons: Automated Discovery of SSRF Vulnerabilities in Web Applications}},
+  author={Enze Wang and Jianjun Chen and Wei Xie and Chuhan Wang and Yifei Gao and Zhenhua Wang and Haixin Duan and Yang Liu and Baosheng Wang},
+  booktitle={2024 IEEE Symposium on Security and Privacy  (S\&P)},
+  year={2024},
+}
+```
