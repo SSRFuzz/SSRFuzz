@@ -119,7 +119,7 @@ python3 aider_api.py
 2. Open the test environment:
 
 ```bash
-cd verify && ./test.sh
+cd verify && ./run.sh
 ```
 
 3. Request example code:
