@@ -44,11 +44,13 @@ git clone https://github.com/SSRFuzz/SSRFuzz.git /opt/SSRFuzz
 
 For TaintInfer:
 ```sh
+cd /opt/SSRFuzz/TaintInfer
 composer install
 ```
 
 For Fuzzer and Detector:
 ```sh
+cd /opt/SSRFuzz/Fuzzer
 pip install -r requirements.txt
 ```
 
@@ -58,13 +60,13 @@ pip install -r requirements.txt
 
 4. Modify the `ssrfuzz.ini` configuration file:
 
-- Set `auto_prepend_file` to `/opt/TaintInfer/src/Entry.php`
+- Set `auto_prepend_file` to `/opt/SSRFuzz/TaintInfer/src/Entry.php`
 - Set `extension` to the path of `zmark.so`
 - Copy the remaining content from the `ssrfuzz.ini` in this project
 
 ### Database Configuration
 
-Open `/opt/SSRFuzz/src/Config.php` with an editor and set the following:
+Open `/opt/SSRFuzz/TaintInfer/src/Config.php` with an editor and set the following:
 
 ```php
 define("TAINTINFER_FUZZER_DSN", "");                  // fuzzer dsn address
@@ -109,7 +111,7 @@ CREATE TABLE `check_info` (
 
 ### Testing
 
-1. Start the fuzzer and aider_api:
+1. Start the fuzzer and detector:
 
 ```sh
 python3 fuzzer.py
@@ -119,7 +121,7 @@ python3 detector.py
 2. Open the test environment:
 
 ```bash
-cd verify && ./run.sh
+cd /opt/SSRFuzz/TaintInfer/verify && ./run.sh
 ```
 
 3. Request example code:
