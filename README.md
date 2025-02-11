@@ -113,7 +113,7 @@ CREATE TABLE `check_info` (
 
 ```sh
 python3 fuzzer.py
-python3 aider_api.py
+python3 detector.py
 ```
 
 2. Open the test environment:
